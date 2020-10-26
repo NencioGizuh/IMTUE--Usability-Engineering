@@ -1,0 +1,804 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.st0{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;}
+
+.container
+{
+    background-image: url(../Afbeeldingen/Web_1920.png);
+    background-size: 1440px 790px;
+    width: 1423px;
+    height: 789px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.shoppage
+{
+    background-color: #f5c300;
+}
+
+.shoppage2
+{
+    background-color: #f5c300;
+}
+
+.payphone
+{
+    position: absolute;
+    top: -35px;
+    left: 190px;
+    width: 200px;
+}
+
+h1
+{
+    font-family: 'Staatliches';
+    margin: 0;
+    margin-top: -0.3em;
+    padding-left: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    font-size: 7.5em;
+    font-weight: 400;
+}
+
+.instruction-icon
+{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.text-container
+{
+    margin-top: -3em;
+    text-align: center;
+}
+
+.bannertekst p
+{
+    font-family: 'Staatliches';
+    color: #fff;
+    margin: 0;
+    margin-left: 11em;
+    font-size: 2em;
+}
+
+h2
+{
+    font-family: 'Staatliches';
+    margin: 0;
+    margin-top: 0.9em;
+    padding-left: 2.05em;
+    text-transform: uppercase;
+    color: black;
+    font-size: 11em;
+}
+
+h3
+{
+    font-family: 'Staatliches';
+    font-size: 3em;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+h4
+{
+    font-family: 'Staatliches';
+    font-size: 3em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.active
+{
+    border-bottom: 3px solid;
+}
+
+.buttonsection
+{
+    display: flex;
+    z-index: 1;
+    text-align: center;
+    margin-top: -19em;
+}
+
+.order
+{
+    background-color: #fff;
+    font-family: 'Staatliches';
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 15px 45px;
+    font-size: 1.6em;
+    box-shadow: 0 9px black;
+    margin-left: 28.5%;
+    margin-top: 1em;
+}
+
+.order:active {
+    background-color: #fff;
+    box-shadow: 0 5px black;
+    transform: translateY(5px);
+  }
+
+.Iphone
+{
+    position: absolute;
+    top: 20%;
+    left: 878px;
+    width: 350px;
+}
+
+.navigation
+{
+    display: flex;
+    padding-left: 25em;
+    margin: 2.8em;
+}
+
+.navigation li
+{
+    list-style: none;
+    font-family: 'Staatliches';
+    margin-right: 3em;
+}
+
+.navigation li a
+{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation li a:active
+{
+    border-bottom: 3px solid;
+}
+
+.navigation li a:hover:not(:active)
+{
+    border-bottom: 3px solid;
+}
+
+.instructions
+{
+    display: block;
+    margin: 0 auto;
+    width: 950px;
+    margin-top: -4em;
+    z-index: -1;
+}
+
+.subscription
+{
+    background-color: #fff;
+    font-family: 'Staatliches';
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 15px 45px;
+    font-size: 1.6em;
+    box-shadow: 0 9px black;
+    margin-left: 15.8em;
+    margin-top: 9em;
+}
+
+.subscription:active
+{
+    background-color: #fff;
+    box-shadow: 0 5px black;
+    transform: translateY(5px);
+}
+
+.gohome
+{
+    background-color: #fff;
+    font-family: 'Staatliches';
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 15px 45px;
+    font-size: 1.6em;
+    box-shadow: 0 9px black;
+    margin-left: 6.8em;
+    margin-top: 9em;
+}
+
+.gohome:active
+{
+    background-color: #fff;
+    box-shadow: 0 5px black;
+    transform: translateY(5px);
+}
+
+svg
+{
+    display: block;
+    position: sticky;
+    max-width: 5.5%;
+    margin: 0 auto;
+    margin-top: -5.5em
+}
+
+svg #Pijl
+{
+    animation-duration: 1s;
+    animation-name: animatePijl;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animatePijl {
+    from
+    {
+        transform: translateX(0) translateY(0);
+    }
+    
+    to
+    {
+        transform: translateY(60px);
+    }
+}
+
+.eersteKeuze img
+{
+    width: 45%;
+}
+
+.list
+{
+    background-color: white;
+    cursor: pointer;
+    margin-top: -3em;
+    padding: 5em;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.selectedItem
+{
+    color: #f5c300;
+    background-color: black;
+}
+
+.eersteKeuze
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 0em;
+    list-style: none;
+    margin: 10em;
+    margin-top: -1em;
+    padding-left: 8em;
+    padding-right: 8em;
+    z-index: -1;
+}
+
+.eersteKeuze h4
+{
+    font-family: 'Staatliches';
+    font-size: 3em;
+    text-align: center;
+}
+
+h5
+{
+    font-family: 'Staatliches';
+    font-size: 3em;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.phoneselection
+{
+    background-color: black;
+}
+
+h6
+{
+    font-family: 'Staatliches';
+    font-size: 3em;
+    margin-top: 0.5em;
+    padding-top: 1em;
+    text-align: center;
+    color: #f5c300;
+}
+
+.phoneChoose
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.phoneChoose .prijs
+{
+    font-family: 'Staatliches';
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #900;
+    color: #fff;
+    display: block;
+    width: 80px;
+    text-align: center;
+    padding: 28px 0;
+    border-radius: 100%;
+    transform: rotate(10deg);
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.korting
+{
+    font-family: 'Staatliches';
+    font-size: 1.6em;
+    font-weight: bold;
+    background-color: #900;
+    color: #fff;
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 58px 0;
+    border-radius: 100%;
+    transform: rotate(10deg);
+    position: absolute;
+    top: 70%;
+    right: 14%;
+}
+
+.list2
+{
+    background-color: #fff;
+    cursor: pointer;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.selectedPhone
+{
+    background-color: #f5c300; 
+}
+
+.phoneChoose img
+{
+    width: 55%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.phoneChoose h4
+{
+    font-family: 'Staatliches';
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.bundelselection
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 8em;
+    padding-right: 8em;
+    margin-bottom: 5em;
+}
+
+.list3
+{
+    background-color: #fff;
+    cursor: pointer;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.selectedBundle
+{
+    color: #f5c300;
+    background-color: black; 
+}
+
+.bundelselection img
+{
+    width: 65%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.bundelselection h4
+{
+    font-family: 'Staatliches';
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.bundelselection p
+{
+    font-family: 'Staatliches';
+    font-size: 1.4em;
+}
+
+.invulformulier
+{
+    display: block;
+    color: #f5c300;
+    font-family: 'Staatliches';
+    margin: 0 auto;
+    margin-left: 1em;
+    margin-top: -2.5em;
+}
+
+input[type=text], [type=email]
+{
+    display: block;
+    width: 80%;
+    padding: 10px 10px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    -ms-appearance: checkbox;     /* not currently supported */
+  }
+
+  .confirm
+  {
+      text-align: center;
+  }
+
+  .order2
+  {
+    background-color: #fff;
+    font-family: 'Staatliches';
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 15px 45px;
+    font-size: 1.6em;
+    box-shadow: 0 9px #f5c300;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .order3
+  {
+    background-color: #fff;
+    font-family: 'Staatliches';
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 15px 45px;
+    font-size: 1.6em;
+    box-shadow: 0 9px black;
+    margin-top: 15em;
+    margin-bottom: 1em;
+  }
+
+  .orderselection
+{
+    position: absolute;
+    left: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    list-style: none;
+}
+
+  .orderselection li
+  {
+      width: 60%;
+      display: flex;
+      margin-right: 10em;
+      background-color: #fff;
+      padding: 1em;
+      transition: all 0.5s ease;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+  }
+
+  .orderselection h4
+{
+    font-family: 'Staatliches';
+    font-size: 1.75em;
+    text-align: center;
+    padding-left: 2em;
+}
+
+  .orderselection img
+  {
+      width: 15%;
+      height: 15%;
+  }
+
+  .errorbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .errorbox-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .gegevenslijst
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+    list-style: none;
+  }
+
+  .meter { 
+    height: 15px;/* Can be anything */
+    margin: 0 auto;
+    width: 80%;
+    background: #fff;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+  }
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #f5c300;
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+#progressbar
+{
+    transition: all 2s;
+}
+
+#confirmOrder
+{
+    display: none;
+}
+
+.orderOverview
+{
+    display: flex;
+}
+
+.gegevens
+{
+    position: absolute;
+    font-size: 1.2em;
+    left: 25%;
+    list-style: none;
+}
+
+.menu-responsive
+{
+    display: none;
+    width: 30px;
+    position: absolute;
+    top: 5.5%;
+    left: 13.5%;
+}
+
+.centerbutton
+{
+    text-align: center;
+}
+
+.breadcrumbs
+{
+    z-index: 1;
+    position: absolute;
+    left: 17%;
+}
+
+.crumb
+{
+    color: black;
+    text-decoration: none;
+    font-family: 'Staatliches';
+}
+
+.crumb:hover
+{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1000px)
+{
+}
+
+@media screen and (max-width: 800px)
+{
+    .bannertekst 
+    {
+    }
+    .orderselection
+    {
+        left: 30%;
+    }
+    .menu-responsive
+    {
+        display: block;
+        left: 1%;
+    }
+
+    .subscription
+    {
+        display: block;
+        margin: 0 auto;
+        margin-top: 12em;
+        margin-left: 4.5em;
+    }
+
+    .payphone
+    {
+        left: 1%;
+    }
+
+    .breadcrumbs
+    {
+        position: relative;
+        margin-top: 7em;
+        margin-left: 2em;
+    }
+
+    .navigation
+    {
+        position: absolute;
+        top: 12%;
+        display: block;
+        background-color: white;
+        padding: 0 1px;
+        margin: 0;
+        width: 11.5%;
+        transition: all 0.5s;
+        text-align: center;
+        box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.5);
+    }
+
+    .navigation li
+    {
+        text-align: left;
+        display: block;
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    .navigation li a
+    {
+        color: black;
+    }
+
+    .gegevens
+    {
+        left: 0%;
+    }
+    .active
+    {
+        border-bottom: none;
+    }
+
+    .navigation li a:hover:not(:active)
+    {
+        border-bottom: none;
+        background-color: #f5c300;
+        width: 100%;
+    }
+
+    h5
+    {
+        margin-top: 2.5em;
+    }
+
+    .eersteKeuze
+    {
+        grid-template-columns: 1fr;
+        margin: 0 1em;
+        padding: 0 1em;
+        grid-row-gap: 5em;
+    }
+
+    .phoneChoose
+    {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1em;
+        padding: 0 1em;
+    }
+
+    .bundelselection
+    {
+        grid-template-columns: 1fr;
+        margin: 0 1em;
+        padding: 0 1em;
+    }
+
+    .gegevenslijst
+    {
+        margin: 0 1em;
+        padding: 0 1em;
+    }
+
+    svg
+    {
+    display: none;
+    position: sticky;
+    max-width: 20%;
+    margin: 0 auto;
+    margin-top: 0.5em
+    }
+
+    h3
+    {
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+    }
+
+    .instructions
+    {
+        width: 80%;
+    }
+} 
